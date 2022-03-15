@@ -1,0 +1,22 @@
+#include<stdio.h>
+int sum1(int *i,int *j)
+{
+   printf("%d is the sum of %d and %d ",*i+*j,*i,*j);
+}
+int sum2(int a,int b)
+{
+    printf("%d is the sum of %d and %d",a+b,a,b);
+}
+int main()
+{
+    int c=10,d=120;
+    
+    //call by reference
+    sum1(&c,&d);
+    
+    printf("\n\n");
+    
+    //call by value 
+    sum2(c,d);
+    
+}
