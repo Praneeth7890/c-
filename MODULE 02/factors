@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int a,numb;
+    printf("Enter a number to find its factors:");
+    scanf("%d",&numb);
+    printf("all factors of %d are\n",numb);
+    for (a=1;a<=numb;++a)
+    {
+        if(numb % a == 0){
+        printf(" %d ",a);}
+    }
+}
