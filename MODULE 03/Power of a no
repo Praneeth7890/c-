@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int power(int base, int exp){
+int pn;
+pn=pow(base,exp);
+printf("%d(th) power of %d i s %d",exp,base,pn);
+return(0);
+}
+int main(void){
+int base,exp;
+printf("Enter base number and exponent here = ");
+scanf("%d %d",&base,&exp);
+power(base,exp);
+}
