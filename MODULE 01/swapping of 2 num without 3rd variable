@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+int a, b;
+printf("Enter two integersn");
+scanf("%d%d", &a, &b);
+printf("Before SwappingnFirst variable = %dnSecond variable = %dn", a, b);
+a = a + b;
+b = a - b;
+a = a - b;
+printf("After SwappingnFirst variable = %dnSecond variable = %dn", a, b);
+return 0;
+}
